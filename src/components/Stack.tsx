@@ -28,6 +28,9 @@ import {
   siLinear,
   siSupabase,
   siDatadog,
+  siExpo,
+  siGooglegemini,
+  siStorybook,
 } from "simple-icons";
 import ScrollButton from "~/components/ScrollButton";
 
@@ -51,8 +54,9 @@ const row1: Tech[] = [
   { name: "Cloudflare",  href: "https://cloudflare.com",      path: siCloudflare.path,  hex: siCloudflare.hex },
   { name: "GitHub",      href: "https://github.com",          path: siGithub.path,      hex: "a1a1aa" },
   { name: "Docker",      href: "https://docker.com",          path: siDocker.path,      hex: siDocker.hex },
-  { name: "Figma",       href: "https://figma.com",           path: siFigma.path,       hex: siFigma.hex },
-  { name: "Datadog",     href: "https://datadoghq.com",       path: siDatadog.path,     hex: siDatadog.hex },
+  { name: "Figma",        href: "https://figma.com",           path: siFigma.path,       hex: siFigma.hex },
+  { name: "Expo",         href: "https://expo.dev",            path: siExpo.path,        hex: "a1a1aa" },
+  { name: "React Native", href: "https://reactnative.dev",    path: siReact.path,       hex: siReact.hex },
 ];
 
 const row2: Tech[] = [
@@ -69,6 +73,8 @@ const row2: Tech[] = [
   { name: "Linear",     href: "https://linear.app",           path: siLinear.path,      hex: siLinear.hex },
   { name: "Datadog",    href: "https://datadoghq.com",        path: siDatadog.path,     hex: siDatadog.hex },
   { name: "Supabase",   href: "https://supabase.com",         path: siSupabase.path,    hex: siSupabase.hex },
+  { name: "Gemini",     href: "https://gemini.google.com",    path: siGooglegemini.path, hex: siGooglegemini.hex },
+  { name: "Storybook",  href: "https://storybook.js.org",     path: siStorybook.path,   hex: siStorybook.hex },
 ];
 
 // Playwright has no simple-icon

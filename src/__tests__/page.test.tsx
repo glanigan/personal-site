@@ -82,7 +82,8 @@ describe("Stack section", () => {
     "GitHub", "Docker", "Figma", "Datadog",
     "Clerk", "Neon", "Tanstack", "Zod", "Playwright",
     "Vitest", "RTL", "GCP", "Claude",
-    "Turborepo", "Linear", "Datadog", "Supabase",
+    "Turborepo", "Linear", "Datadog", "Supabase", "Gemini", "Storybook",
+    "Expo", "React Native",
   ];
 
   it("renders the stack heading", () => {
