@@ -77,25 +77,12 @@ describe("Currently section", () => {
 
 describe("Stack section", () => {
   const expectedTechs = [
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Bun",
-    "Hono",
-    "Tailwind",
-    "Drizzle",
-    "Postgres",
-    "Vercel",
-    "Cloudflare",
-    "Clerk",
-    "Neon",
-    "Tanstack",
-    "Zod",
-    "Playwright",
-    "Vitest",
-    "RTL",
-    "GCP",
-    "Claude",
+    "TypeScript", "React", "Next.js", "Bun", "Hono",
+    "Tailwind", "Drizzle", "Postgres", "Vercel", "Cloudflare",
+    "GitHub", "Docker", "Figma", "Stripe",
+    "Clerk", "Neon", "Tanstack", "Zod", "Playwright",
+    "Vitest", "RTL", "GCP", "Claude",
+    "Turborepo", "Linear", "Sentry", "Supabase",
   ];
 
   it("renders the stack heading", () => {
