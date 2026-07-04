@@ -79,10 +79,10 @@ describe("Stack section", () => {
   const expectedTechs = [
     "TypeScript", "React", "Next.js", "Bun", "Hono",
     "Tailwind", "Drizzle", "Postgres", "Vercel", "Cloudflare",
-    "GitHub", "Docker", "Figma", "Stripe",
+    "GitHub", "Docker", "Figma", "Datadog",
     "Clerk", "Neon", "Tanstack", "Zod", "Playwright",
     "Vitest", "RTL", "GCP", "Claude",
-    "Turborepo", "Linear", "Sentry", "Supabase",
+    "Turborepo", "Linear", "Datadog", "Supabase",
   ];
 
   it("renders the stack heading", () => {

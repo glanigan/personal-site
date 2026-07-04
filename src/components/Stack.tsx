@@ -16,7 +16,6 @@ import {
   siGithub,
   siDocker,
   siFigma,
-  siStripe,
   siClerk,
   siNeon,
   siTanstack,
@@ -27,8 +26,8 @@ import {
   siClaude,
   siTurborepo,
   siLinear,
-  siSentry,
   siSupabase,
+  siDatadog,
 } from "simple-icons";
 import ScrollButton from "~/components/ScrollButton";
 
@@ -53,7 +52,7 @@ const row1: Tech[] = [
   { name: "GitHub",      href: "https://github.com",          path: siGithub.path,      hex: "a1a1aa" },
   { name: "Docker",      href: "https://docker.com",          path: siDocker.path,      hex: siDocker.hex },
   { name: "Figma",       href: "https://figma.com",           path: siFigma.path,       hex: siFigma.hex },
-  { name: "Stripe",      href: "https://stripe.com",          path: siStripe.path,      hex: siStripe.hex },
+  { name: "Datadog",     href: "https://datadoghq.com",       path: siDatadog.path,     hex: siDatadog.hex },
 ];
 
 const row2: Tech[] = [
@@ -68,7 +67,7 @@ const row2: Tech[] = [
   { name: "Claude",     href: "https://claude.ai",            path: siClaude.path,      hex: siClaude.hex },
   { name: "Turborepo",  href: "https://turbo.build",          path: siTurborepo.path,   hex: siTurborepo.hex },
   { name: "Linear",     href: "https://linear.app",           path: siLinear.path,      hex: siLinear.hex },
-  { name: "Sentry",     href: "https://sentry.io",            path: siSentry.path,      hex: siSentry.hex },
+  { name: "Datadog",    href: "https://datadoghq.com",        path: siDatadog.path,     hex: siDatadog.hex },
   { name: "Supabase",   href: "https://supabase.com",         path: siSupabase.path,    hex: siSupabase.hex },
 ];
 
@@ -78,7 +77,7 @@ const playwrightPath =
 
 // Fixed item slot width — must match w-28 (112px) + gap-8 (32px)
 const ITEM_SLOT = 144;
-const SPEED = 0.65; // px per frame ≈ 39px/s at 60fps
+const SPEED = 0.35; // px per frame ≈ 21px/s at 60fps
 
 function MarqueeTrack({
   items,
