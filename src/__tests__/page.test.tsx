@@ -85,7 +85,17 @@ describe("Stack section", () => {
     "Tailwind",
     "Drizzle",
     "Postgres",
-    "AI",
+    "Vercel",
+    "Cloudflare",
+    "Clerk",
+    "Neon",
+    "Tanstack",
+    "Zod",
+    "Playwright",
+    "Vitest",
+    "RTL",
+    "GCP",
+    "Claude",
   ];
 
   it("renders the stack heading", () => {
@@ -95,15 +105,28 @@ describe("Stack section", () => {
     ).toBeInTheDocument();
   });
 
-  it.each(expectedTechs)("shows %s as a stack badge", (tech) => {
+  it.each(expectedTechs)("shows %s in the stack", (tech) => {
     render(<Stack />);
-    expect(screen.getByText(tech)).toBeInTheDocument();
+    // Items are duplicated for the marquee loop — getAllByText handles that
+    expect(screen.getAllByText(tech).length).toBeGreaterThanOrEqual(1);
   });
 
-  it("renders all technologies as a list", () => {
+  it("each technology links to its website", () => {
     render(<Stack />);
-    const items = screen.getAllByRole("listitem");
-    expect(items.length).toBeGreaterThanOrEqual(expectedTechs.length);
+    const links = screen.getAllByRole("link", { name: /typescript/i });
+    expect(links[0]).toHaveAttribute("href", "https://typescriptlang.org");
+  });
+
+  it("Playwright links to playwright.dev", () => {
+    render(<Stack />);
+    const links = screen.getAllByRole("link", { name: /playwright/i });
+    expect(links[0]).toHaveAttribute("href", "https://playwright.dev");
+  });
+
+  it("Claude links to claude.ai", () => {
+    render(<Stack />);
+    const links = screen.getAllByRole("link", { name: /claude/i });
+    expect(links[0]).toHaveAttribute("href", "https://claude.ai");
   });
 });
 
