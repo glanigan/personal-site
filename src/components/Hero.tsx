@@ -1,17 +1,20 @@
 import Link from "next/link";
+import ScrollButton from "~/components/ScrollButton";
 
 export default function Hero() {
   return (
     <section
+      id="hero"
       aria-label="Introduction"
-      className="relative flex min-h-svh flex-col items-center justify-center overflow-hidden px-6 text-center"
+      className="relative flex h-screen snap-start flex-col overflow-hidden px-6 text-center"
     >
-      {/* Ambient purple glow */}
+      {/* Ambient purple glow — breathes slowly */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 flex items-center justify-center"
       >
-        <div className="h-[600px] w-[600px] rounded-full bg-purple-600/10 blur-[120px]" />
+        <div className="animate-glow-breathe h-[600px] w-[600px] rounded-full bg-purple-600/10 blur-[120px]" />
+        <div className="animate-glow-breathe-slow absolute h-[300px] w-[300px] translate-x-48 translate-y-24 rounded-full bg-orange-500/5 blur-[80px]" />
       </div>
 
       {/* Subtle grid overlay */}
@@ -20,6 +23,7 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(168,85,247,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(168,85,247,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"
       />
 
+      <div className="flex flex-1 items-center justify-center">
       <div className="relative z-10 max-w-3xl">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-purple-400">
           Engineering Manager
@@ -62,14 +66,9 @@ export default function Hero() {
           </Link>
         </nav>
       </div>
-
-      {/* Scroll nudge */}
-      <div
-        aria-hidden="true"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
-      >
-        <div className="h-5 w-px bg-gradient-to-b from-zinc-600 to-transparent" />
       </div>
+
+      <ScrollButton targetId="currently" />
     </section>
   );
 }

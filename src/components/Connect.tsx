@@ -5,7 +5,7 @@ export default function Connect() {
     <footer
       id="connect"
       aria-labelledby="connect-heading"
-      className="border-t border-zinc-900 px-6 py-24 sm:py-32"
+      className="flex h-screen snap-start flex-col items-center justify-center border-t border-zinc-900 px-6"
     >
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-purple-500">
