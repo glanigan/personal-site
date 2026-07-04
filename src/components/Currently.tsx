@@ -5,7 +5,7 @@ export default function Currently() {
     <section
       id="currently"
       aria-labelledby="currently-heading"
-      className="flex h-screen snap-start flex-col"
+      className="flex h-dvh snap-start flex-col"
     >
       <div className="flex flex-1 items-center justify-center px-6">
         <div className="mx-auto max-w-3xl">

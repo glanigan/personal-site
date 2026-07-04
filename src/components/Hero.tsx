@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       id="hero"
       aria-label="Introduction"
-      className="relative flex h-screen snap-start flex-col overflow-hidden px-6 text-center"
+      className="relative flex h-dvh snap-start flex-col overflow-hidden px-6 text-center"
     >
       {/* Ambient purple glow — breathes slowly */}
       <div
