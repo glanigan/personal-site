@@ -67,23 +67,21 @@ function TechIcon({ tech }: { tech: Tech }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={tech.name}
-      className="group flex flex-col items-center gap-2"
+      className="group/icon flex flex-col items-center gap-3"
     >
       <div
-        className="flex h-12 w-12 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900/60 transition-all duration-300 group-hover:border-zinc-600 group-hover:bg-zinc-800/80"
-        style={
-          { "--brand": brandColor } as React.CSSProperties
-        }
+        className="flex h-16 w-16 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900/60 transition-all duration-300 group-hover/icon:border-zinc-600 group-hover/icon:bg-zinc-800/80"
+        style={{ "--brand": brandColor } as React.CSSProperties}
       >
         <svg
           viewBox="0 0 24 24"
-          className="h-6 w-6 fill-zinc-500 transition-all duration-300 group-hover:fill-[var(--brand)]"
+          className="h-8 w-8 fill-zinc-500 transition-all duration-300 group-hover/icon:fill-[var(--brand)]"
           aria-hidden="true"
         >
           <path d={svgPath ?? ""} />
         </svg>
       </div>
-      <span className="text-xs text-zinc-600 transition-colors duration-300 group-hover:text-zinc-300">
+      <span className="text-xs text-zinc-600 transition-colors duration-300 group-hover/icon:text-zinc-300">
         {tech.name}
       </span>
     </Link>
@@ -100,18 +98,18 @@ function MarqueeTrack({
   const doubled = [...items, ...items];
   return (
     <div
-      className="group overflow-hidden py-2"
+      className="group/track overflow-hidden py-2"
       style={{
         maskImage:
           "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
       }}
     >
       <div
-        className={`flex w-max gap-6 ${
+        className={`flex w-max gap-8 ${
           direction === "left"
             ? "animate-marquee-left"
             : "animate-marquee-right"
-        } group-hover:[animation-play-state:paused]`}
+        } group-hover/track:[animation-play-state:paused]`}
       >
         {doubled.map((tech, i) => (
           <TechIcon key={`${tech.name}-${i}`} tech={tech} />
