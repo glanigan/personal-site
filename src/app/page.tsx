@@ -6,7 +6,7 @@ import Connect from "~/components/Connect";
 
 export default function Page() {
   return (
-    <main className="h-screen snap-y snap-mandatory overflow-y-scroll">
+    <main className="h-dvh snap-y snap-mandatory overflow-y-scroll">
       <Hero />
       <Currently />
       <Stack />

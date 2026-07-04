@@ -222,7 +222,7 @@ export default function Stack() {
     <section
       id="stack"
       aria-labelledby="stack-heading"
-      className="flex h-screen snap-start flex-col border-y border-zinc-900 bg-zinc-950/50"
+      className="flex h-dvh snap-start flex-col border-y border-zinc-900 bg-zinc-950/50"
     >
       <div className="flex flex-1 flex-col justify-center gap-8 py-8">
         <div className="px-6">
